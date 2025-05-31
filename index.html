@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="icon" href="./me.jpg" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
@@ -158,7 +159,7 @@
 
       .navbar.scrolled {
         padding: 0.5rem 0;
-        background: rgba(2, 6, 23, 0.95);
+        background: "rgba(2, 6, 23, 0.95)";
       }
 
       .nav-container {
@@ -421,7 +422,7 @@
       .project-img img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: contain;
         transition: transform 0.5s ease;
       }
 
@@ -628,51 +629,12 @@
       }
 
       /* FOOTER */
-      footer {
-        background: rgba(2, 6, 23, 0.9);
-        padding: 4rem 0 2rem;
-        border-top: 1px solid rgba(255, 255, 255, 0.05);
-      }
 
       .footer-content {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
-      }
-
-      .footer-logo {
-        font-size: 2rem;
-        font-weight: 700;
-        margin-bottom: 1.5rem;
-      }
-
-      .footer-logo span {
-        color: var(--primary);
-      }
-
-      .footer-links {
-        display: flex;
-        gap: 2rem;
-        margin-bottom: 2rem;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-
-      .footer-links a {
-        color: var(--light);
-        text-decoration: none;
-        transition: color 0.3s;
-      }
-
-      .footer-links a:hover {
-        color: var(--primary);
-      }
-
-      .social-links-footer {
-        display: flex;
-        gap: 1.5rem;
-        margin-bottom: 2rem;
       }
 
       .copyright {
@@ -753,20 +715,15 @@
         .btn {
           padding: 10px 24px;
         }
-
-        .footer-links {
-          flex-direction: column;
-          gap: 1rem;
-        }
       }
     </style>
   </head>
   <body>
     <nav class="navbar">
       <div class="container nav-container">
-        <a href="#" class="logo">
+        <a href="#hero" class="logo">
           <i class="fas fa-code"></i>
-          Paul<span>.</span>
+          Paul<span>M.</span>
         </a>
         <ul class="nav-links">
           <li><a href="#hero" class="active">Home</a></li>
@@ -788,7 +745,8 @@
           <h1>Paul <span>Muiruri</span></h1>
           <p>
             Full-Stack Developer & Cloud Solutions Architect with expertise in
-            creating scalable web applications and cloud infrastructure.
+            creating scalable web and mobile applications and cloud
+            infrastructure.
           </p>
           <div class="social-links">
             <a href="#"><i class="fab fa-github"></i></a>
@@ -803,9 +761,7 @@
         </div>
         <div class="hero-image">
           <div class="hero-img-container">
-            <img
-              src="./me.jpg"
-              alt="Paul Muiruri" />
+            <img src="./me.jpg" alt="Paul Muiruri" />
           </div>
         </div>
       </div>
@@ -819,9 +775,9 @@
             <p>
               I am a passionate Full-Stack Developer and Cloud Solutions
               Architect currently pursuing a BSc in Applied Computer Science at
-              Egerton University. With over 3 years of hands-on experience, I
-              specialize in building scalable web applications and implementing
-              cloud infrastructure solutions.
+              Egerton University. With over 2 years of hands-on experience, I
+              specialize in building scalable web and mobile applications,
+              implementing cloud infrastructure solutions.
             </p>
             <p>
               My approach combines technical expertise with creative
@@ -830,9 +786,9 @@
               challenges that push the boundaries of technology.
             </p>
             <p>
-              When I'm not coding, you can find me contributing to open-source
-              projects, exploring new technologies, or mentoring aspiring
-              developers.
+              When I'm not coding, you can find me learning new things from
+              Youtube and programming language's documentation and also
+              exploring new technologies.
             </p>
           </div>
           <div class="about-details">
@@ -840,16 +796,21 @@
               <h3><i class="fas fa-graduation-cap"></i> Education</h3>
               <p>Egerton University</p>
               <p>BSc Applied Computer Science</p>
-              <p>2021 - 2025</p>
-            </div>
-            <div class="detail-item">
-              <h3><i class="fas fa-briefcase"></i> Experience</h3>
-              <p>Full-Stack Developer at Tech Solutions Inc.</p>
               <p>2022 - Present</p>
             </div>
             <div class="detail-item">
+              <h3><i class="fas fa-briefcase"></i> Experience</h3>
+              <p>Full-Stack Developer</p>
+              <p>2022 - Present</p>
+            </div>
+
+            <div class="detail-item">
+              <p>Attachment</p>
+              <p>Context Experts Agencies, Ruiru - Digital Marketing agency</p>
+            </div>
+            <div class="detail-item">
               <h3><i class="fas fa-map-marker-alt"></i> Location</h3>
-              <p>Nairobi, Kenya</p>
+              <p>Nakuru, Kenya</p>
             </div>
           </div>
         </div>
@@ -862,77 +823,44 @@
         <div class="projects-grid">
           <div class="project-card">
             <div class="project-img">
-              <img
-                src="./studyhub.png"
-                alt="StudyHub" />
+              <img src="./studyhub.png" alt="StudyHub" />
             </div>
             <div class="project-content">
               <h3>StudyHub</h3>
               <p>
                 A comprehensive study platform for organizing learning resources
-                and facilitating collaboration among students with real-time
-                document sharing.
+                and providing learners to access of past paper examinations.
               </p>
               <div class="tech-tags">
-                <span class="tech-tag">React</span>
-                <span class="tech-tag">Node.js</span>
-                <span class="tech-tag">Firebase</span>
-                <span class="tech-tag">MongoDB</span>
-              </div>
-              <div class="project-links">
-                <a href="#" class="btn">Live Demo</a>
-                <a href="#" class="btn btn-outline">View Code</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <div class="project-img">
-              <img
-                src="./studymate.png"
-                alt="StudyMate" />
-            </div>
-            <div class="project-content">
-              <h3>StudyMate</h3>
-              <p>
-                An AI-powered question answering system featuring document
-                scanning and intuitive search functionalities for educational
-                content.
-              </p>
-              <div class="tech-tags">
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">TensorFlow</span>
-                <span class="tech-tag">Google Cloud</span>
                 <span class="tech-tag">React Native</span>
+
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Google Cloud</span>
+                <span class="tech-tag">MPesa Daraja API</span>
               </div>
               <div class="project-links">
                 <a href="#" class="btn">Live Demo</a>
-                <a href="#" class="btn btn-outline">View Code</a>
               </div>
             </div>
           </div>
 
           <div class="project-card">
             <div class="project-img">
-              <img
-                src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-                alt="CloudDeploy" />
+              <img src="./studymate.png" alt="StudyMate" />
             </div>
             <div class="project-content">
-              <h3>CloudDeploy</h3>
+              <h3>Studex</h3>
               <p>
-                A serverless deployment platform automating cloud infrastructure
-                provisioning and CI/CD pipelines for development teams.
+                An application for providing University of Kabianga with past
+                papers for making academic journey smooth and enjoyable.
               </p>
               <div class="tech-tags">
-                <span class="tech-tag">AWS</span>
-                <span class="tech-tag">Serverless</span>
-                <span class="tech-tag">Terraform</span>
-                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">React Native</span>
+                <span class="tech-tag">Firebase</span>
+                <span class="tech-tag">Google Cloud</span>
               </div>
               <div class="project-links">
                 <a href="#" class="btn">Live Demo</a>
-                <a href="#" class="btn btn-outline">View Code</a>
               </div>
             </div>
           </div>
@@ -995,16 +923,7 @@
                 </div>
                 <div class="skill-info">
                   <h4>Databases</h4>
-                  <p>MongoDB, PostgreSQL, Firebase</p>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-icon">
-                  <i class="fas fa-cloud"></i>
-                </div>
-                <div class="skill-info">
-                  <h4>Serverless</h4>
-                  <p>AWS Lambda, Google Cloud Functions</p>
+                  <p>MongoDB, Firebase</p>
                 </div>
               </div>
             </div>
@@ -1015,20 +934,11 @@
             <div class="skill-list">
               <div class="skill-item">
                 <div class="skill-icon">
-                  <i class="fab fa-aws"></i>
-                </div>
-                <div class="skill-info">
-                  <h4>AWS</h4>
-                  <p>EC2, S3, Lambda, DynamoDB</p>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-icon">
                   <i class="fab fa-google"></i>
                 </div>
                 <div class="skill-info">
                   <h4>Google Cloud</h4>
-                  <p>Firebase, Cloud Functions, GKE</p>
+                  <p>Firebase, Cloud Functions</p>
                 </div>
               </div>
               <div class="skill-item">
@@ -1057,7 +967,9 @@
               </div>
               <div class="contact-text">
                 <h3>Email</h3>
-                <a href="mailto:muiruripaul3492@gmail.com">muiruripaul3492@gmail.com</a>
+                <a href="mailto:muiruripaul3492@gmail.com"
+                  >muiruripaul3492@gmail.com</a
+                >
               </div>
             </div>
             <div class="contact-item">
@@ -1066,7 +978,7 @@
               </div>
               <div class="contact-text">
                 <h3>Phone</h3>
-                <a href="tel:+254712345678">+254 794 118 553</a>
+                <a href="tel:+254794118553">+254 794 118 553</a>
               </div>
             </div>
             <div class="contact-item">
@@ -1075,7 +987,7 @@
               </div>
               <div class="contact-text">
                 <h3>Location</h3>
-                <p>Nairobi, Kenya</p>
+                <p>Nakuru, Kenya</p>
               </div>
             </div>
           </div>
@@ -1086,11 +998,20 @@
               </div>
               <div class="form-group">
                 <input
-                  type="email"
-                  id="email"
-                  placeholder="Your Email"
+                  type="text"
+                  id="subject"
+                  placeholder="Subject"
                   required />
               </div>
+
+              <div class="form-group">
+                <input
+                  type="tel"
+                  id="telephone"
+                  placeholder="Phone number"
+                  required />
+              </div>
+
               <div class="form-group">
                 <textarea
                   id="message"
@@ -1098,7 +1019,7 @@
                   placeholder="Your Message"
                   required></textarea>
               </div>
-              <button type="submit">Send Message</button>
+              <button type="submit">Send Mail</button>
             </form>
           </div>
         </div>
@@ -1108,22 +1029,8 @@
     <footer>
       <div class="container">
         <div class="footer-content">
-          <div class="footer-logo">Paul<span>.</span></div>
-          <div class="footer-links">
-            <a href="#hero">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-          </div>
-          <div class="social-links-footer">
-            <a href="#"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-dev"></i></a>
-          </div>
           <div class="copyright">
-            &copy; 2023 Paul Muiruri. All rights reserved.
+            &copy; 2025 Paul Muiruri. All rights reserved.
           </div>
         </div>
       </div>
@@ -1176,21 +1083,17 @@
 
       // Form submission
       const contactForm = document.getElementById("contactForm");
+
       contactForm.addEventListener("submit", (e) => {
         e.preventDefault();
 
         // Get form values
         const name = document.getElementById("name").value;
-        const email = document.getElementById("email").value;
+        const subject = document.getElementById("subject").value;
         const message = document.getElementById("message").value;
+        const phoneNumber = document.getElementById("telephone").value;
 
-        // In a real scenario, you would send this data to a server
-        console.log({ name, email, message });
-
-        // Show success message
-        alert(
-          `Thank you ${name}! Your message has been sent successfully. I'll get back to you soon.`
-        );
+        window.location.href = `mailto:muiruripaul3492@gmail.com?subject=Hi my name is ${name}, ${subject}&body=${message}, for more information you can reach me via ${phoneNumber}`;
 
         // Reset form
         contactForm.reset();
