@@ -5,7 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      Paul Muiruri | Full-Stack Developer & Cloud Solutions Architect
+      Paul Muiruri | Full-Stack Developer | Cloud Architect | React | React
+      Native | Firebase
     </title>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500&display=swap"
@@ -39,6 +40,11 @@
         line-height: 1.6;
         overflow-x: hidden;
         position: relative;
+        transition: transform 0.3s ease;
+      }
+
+      body.menu-open {
+        overflow: hidden;
       }
 
       body::before {
@@ -145,6 +151,24 @@
         }
       }
 
+      @keyframes slideIn {
+        from {
+          transform: translateX(-100%);
+        }
+        to {
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes fadeInOverlay {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
       /* NAVIGATION */
       .navbar {
         background: rgba(15, 23, 42, 0.8);
@@ -167,6 +191,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 1.5rem 0;
+        position: relative;
       }
 
       .logo {
@@ -177,6 +202,8 @@
         display: flex;
         align-items: center;
         gap: 10px;
+        z-index: 1002;
+        position: relative;
       }
 
       .logo span {
@@ -227,6 +254,86 @@
         color: var(--light);
         font-size: 1.5rem;
         cursor: pointer;
+        z-index: 1002;
+        position: relative;
+      }
+
+      .mobile-nav-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 998;
+        display: none;
+        animation: fadeInOverlay 0.3s ease;
+      }
+
+      .mobile-nav-overlay.active {
+        display: block;
+      }
+
+      /* MOBILE NAVIGATION STYLES */
+      @media (max-width: 768px) {
+        .mobile-menu-btn {
+          display: block;
+        }
+
+        .nav-links {
+          position: fixed;
+          top: 0;
+          left: 0;
+          height: 100vh;
+          width: 80%;
+          max-width: 320px;
+          background: var(--darker);
+          flex-direction: column;
+          padding: 100px 2rem 2rem;
+          transform: translateX(-100%);
+          transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+          z-index: 1000;
+          display: flex;
+          border-right: 1px solid rgba(255, 255, 255, 0.1);
+          box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .nav-links.active {
+          transform: translateX(0);
+          animation: slideIn 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .nav-links li {
+          margin: 1.2rem 0;
+          opacity: 0;
+          transform: translateX(-20px);
+          transition: all 0.4s ease;
+        }
+
+        .nav-links.active li {
+          opacity: 1;
+          transform: translateX(0);
+        }
+
+        .nav-links li:nth-child(1) {
+          transition-delay: 0.1s;
+        }
+        .nav-links li:nth-child(2) {
+          transition-delay: 0.15s;
+        }
+        .nav-links li:nth-child(3) {
+          transition-delay: 0.2s;
+        }
+        .nav-links li:nth-child(4) {
+          transition-delay: 0.25s;
+        }
+        .nav-links li:nth-child(5) {
+          transition-delay: 0.3s;
+        }
+
+        .nav-links a {
+          font-size: 1.3rem;
+        }
       }
 
       /* HERO SECTION */
@@ -629,7 +736,6 @@
       }
 
       /* FOOTER */
-
       .footer-content {
         display: flex;
         flex-direction: column;
@@ -672,14 +778,6 @@
       }
 
       @media (max-width: 768px) {
-        .nav-links {
-          display: none;
-        }
-
-        .mobile-menu-btn {
-          display: block;
-        }
-
         .hero-text h1 {
           font-size: 2.8rem;
         }
@@ -719,6 +817,8 @@
     </style>
   </head>
   <body>
+    <div class="mobile-nav-overlay"></div>
+
     <nav class="navbar">
       <div class="container nav-container">
         <a href="#hero" class="logo">
@@ -749,10 +849,10 @@
             infrastructure.
           </p>
           <div class="social-links">
-            <a href="#"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-dev"></i></a>
+            <a href="https://wa.me/+254794300699"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/paul-muiruri-34b734338?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.x.com/Plumace1"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/thee_pauloh/"><i class="fab fa-instagram"></i></a>
           </div>
           <div class="hero-btns">
             <a href="#contact" class="btn">Get In Touch</a>
@@ -806,7 +906,10 @@
 
             <div class="detail-item">
               <p>Attachment</p>
-              <p>Context Experts Agencies, Ruiru - Digital Marketing agency</p>
+              <p>
+                Context Experts Agencies Limited, Ruiru - Digital Marketing
+                agency
+              </p>
             </div>
             <div class="detail-item">
               <h3><i class="fas fa-map-marker-alt"></i> Location</h3>
@@ -1060,6 +1163,14 @@
             link.classList.remove("active");
           });
           this.classList.add("active");
+
+          // Close mobile menu if open
+          if (navLinks.classList.contains("active")) {
+            navLinks.classList.remove("active");
+            mobileNavOverlay.classList.remove("active");
+            document.body.classList.remove("menu-open");
+            mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+          }
         });
       });
 
@@ -1102,14 +1213,27 @@
       // Mobile menu toggle
       const mobileMenuBtn = document.querySelector(".mobile-menu-btn");
       const navLinks = document.querySelector(".nav-links");
+      const mobileNavOverlay = document.querySelector(".mobile-nav-overlay");
 
       mobileMenuBtn.addEventListener("click", () => {
-        navLinks.style.display =
-          navLinks.style.display === "flex" ? "none" : "flex";
-        mobileMenuBtn.innerHTML =
-          navLinks.style.display === "flex"
-            ? '<i class="fas fa-times"></i>'
-            : '<i class="fas fa-bars"></i>';
+        navLinks.classList.toggle("active");
+        mobileNavOverlay.classList.toggle("active");
+        document.body.classList.toggle("menu-open");
+
+        // Change icon
+        if (navLinks.classList.contains("active")) {
+          mobileMenuBtn.innerHTML = '<i class="fas fa-times"></i>';
+        } else {
+          mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+        }
+      });
+
+      // Close menu when clicking overlay
+      mobileNavOverlay.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+        mobileNavOverlay.classList.remove("active");
+        document.body.classList.remove("menu-open");
+        mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
       });
     </script>
   </body>
