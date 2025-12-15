@@ -104,7 +104,13 @@ const featuredProjects = [
     image: "./reclaima.png",
     "project-name": "Reclaima",
     "project-description": "Reconnecting you with your lost items",
-    "project-tech-tags": ["Django", "Cloudinary"],
+    "project-tech-tags": [
+      "Python",
+      "Django",
+      "Cloudinary",
+      "Render",
+      "PostgreSQL",
+    ],
     "try-it-link": "https://reclaima.onrender.com/",
   },
 ];
