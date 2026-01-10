@@ -83,10 +83,11 @@ const featuredProjects = [
     "project-description":
       "A comprehensive study platform for organizing learning resources and providing learners to access of past paper examinations accross Kenya.",
     "project-tech-tags": [
-      "React Native",
-      "Expo 54.0.20",
+      "React Native CLI",
+      "NodeJS",
+      "ExpressJS",
       "MongoDB",
-      "Google Cloud",
+      "Google Cloud Run",
       "MPesa Daraja API",
     ],
     "try-it-link":
