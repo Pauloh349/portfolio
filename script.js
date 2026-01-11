@@ -87,6 +87,8 @@ const featuredProjects = [
       "NodeJS",
       "ExpressJS",
       "MongoDB",
+      "Cloudinary",
+      "Firestore database",
       "Google Cloud Run",
       "MPesa Daraja API",
     ],
