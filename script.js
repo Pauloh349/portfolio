@@ -87,6 +87,8 @@ const featuredProjects = [
       "NodeJS",
       "ExpressJS",
       "MongoDB",
+      "Cloudinary",
+      "Firestore database",
       "Google Cloud Run",
       "MPesa Daraja API",
     ],
@@ -95,7 +97,7 @@ const featuredProjects = [
   },
   {
     image: "./studymate.png",
-    "project-name": "Studex",
+    "project-name": "St***x",
     "project-description":
       "An application for providing UoK with past papers for making academic journey smooth and enjoyable.",
     "project-tech-tags": ["React Native", "Expo 54.0.20", "Firebase"],
