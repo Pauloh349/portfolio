@@ -108,13 +108,13 @@ const featuredProjects = [
     "project-name": "Reclaima",
     "project-description": "Reconnecting you with your lost items",
     "project-tech-tags": [
-      "Python",
-      "Django",
-      "Cloudinary",
+      "ReactJS",
+      "NodeJS",
+      "SSE",
       "Render",
-      "PostgreSQL",
+      "MongoDB",
     ],
-    "try-it-link": "https://reclaima.onrender.com/",
+    "try-it-link": "http://reclaima-final-year-project.vercel.app/",
   },
 ];
 

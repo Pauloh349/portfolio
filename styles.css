@@ -470,9 +470,14 @@ h2::after {
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2.5rem;
   margin-top: 2rem;
+  align-items: stretch;
 }
 
 .project-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 620px;
   background: linear-gradient(
     145deg,
     rgba(15, 23, 42, 0.6),
@@ -518,6 +523,9 @@ h2::after {
 
 .project-content {
   padding: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .project-content h3 {
@@ -532,12 +540,50 @@ h2::after {
 }
 
 .tech-tags {
+  position: relative;
   display: flex;
   flex-direction: row;
-  /* overflow-x: scroll; */
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
   gap: 0.5rem;
   margin-bottom: 1.5rem;
+  padding-bottom: 0.25rem;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.tech-tags::-webkit-scrollbar {
+  display: none;
+}
+
+.tech-tags::before,
+.tech-tags::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 18px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.tech-tags::before {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    rgba(15, 23, 42, 0.95),
+    rgba(15, 23, 42, 0)
+  );
+}
+
+.tech-tags::after {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    rgba(15, 23, 42, 0.95),
+    rgba(15, 23, 42, 0)
+  );
 }
 
 .tech-tag {
@@ -547,11 +593,14 @@ h2::after {
   border-radius: 20px;
   font-size: 0.85rem;
   font-family: "Roboto Mono", monospace;
+  flex: 0 0 auto;
+  white-space: nowrap;
 }
 
 .project-links {
   display: flex;
   gap: 1rem;
+  margin-top: auto;
 }
 
 .certification-image {
@@ -779,6 +828,10 @@ button[type="submit"]:hover {
   .projects-grid {
     grid-template-columns: 1fr;
   }
+
+  .project-card {
+    min-height: 560px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -797,5 +850,9 @@ button[type="submit"]:hover {
 
   .btn {
     padding: 10px 24px;
+  }
+
+  .project-card {
+    min-height: 520px;
   }
 }
