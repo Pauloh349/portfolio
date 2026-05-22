@@ -64,7 +64,7 @@ contactForm.addEventListener("submit", (e) => {
   const message = document.getElementById("message").value;
   const phoneNumber = document.getElementById("telephone").value;
 
-  window.location.href = `mailto:muiruripaul3492@gmail.com?subject=Hi my name is ${name}, ${subject}&body=${message}, for more information you can reach me via ${phoneNumber}`;
+  window.location.href = `mailto:pauloh@duck.com?subject=Hi my name is ${name}, ${subject}&body=${message}, for more information you can reach me via ${phoneNumber}`;
 
   // Reset form
   contactForm.reset();
