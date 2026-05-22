@@ -9,7 +9,7 @@
       Native | Firebase | Developer
     </title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Lora:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <link
@@ -34,6 +34,8 @@
           <li><a href="#projects">Projects</a></li>
           <li><a href="#certification">Certification</a></li>
           <li><a href="#skills">Skills</a></li>
+          <li><a href="#crypto">Crypto</a></li>
+          <li><a href="#business">Business</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
         <button class="mobile-menu-btn">
@@ -143,20 +145,25 @@
     <section id="certification">
       <div class="container">
         <h2>Certifications</h2>
-        <div class="skills-container">
-          <div class="skill-category">
-            <h3><i class="fas fa-laptop-code"></i>Gemini Academy 🔶🔸🔷</h3>
-            <div class="skill-list">
-              <img
-                class="certification-image"
-                src="./Gemini-cert.png"
-                alt="googe gemini certificate"
-              />
+        <div class="certificates-grid">
+          <div class="certificate-card" data-cert-image="./Gemini-cert.png">
+            <div class="certificate-image-wrapper">
+              <img src="./Gemini-cert.png" alt="Google Gemini Academy Certificate" class="certificate-thumbnail" />
             </div>
+            <p class="certificate-title">Google Gemini Academy</p>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Certificate Modal -->
+    <div id="certificateModal" class="certificate-modal">
+      <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <img id="modalImage" src="" alt="Certificate" class="modal-image" />
+        <p id="modalTitle" class="modal-title"></p>
+      </div>
+    </div>
 
     <section id="skills">
       <div class="container">
@@ -239,6 +246,190 @@
                   <h4>Containerization</h4>
                   <p>Docker, Kubernetes</p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="crypto">
+      <div class="container">
+        <h2>Crypto Trading & Blockchain</h2>
+        <div class="crypto-content">
+          <div class="crypto-intro">
+            <p class="crypto-tagline">
+              Beyond Code: Decentralized Digital Assets & Market Analytics
+            </p>
+            <p>
+              I'm not just building applications—I'm exploring the future of finance through crypto trading and blockchain technology. With a deep interest in DeFi protocols, market analysis, and blockchain architecture, I combine technical expertise with market intuition to navigate the ever-evolving crypto landscape.
+            </p>
+          </div>
+
+          <div class="crypto-grid">
+            <div class="crypto-card">
+              <div class="crypto-icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <h3>Trading Strategy</h3>
+              <p>
+                Data-driven approach to analyzing market trends, identifying entry/exit points, and managing portfolio risk across multiple blockchain networks.
+              </p>
+              <div class="crypto-badge">Swing & Day Trading</div>
+            </div>
+
+            <div class="crypto-card">
+              <div class="crypto-icon">
+                <i class="fas fa-cube"></i>
+              </div>
+              <h3>Blockchain Development</h3>
+              <p>
+                Understanding smart contracts, tokenomics, and decentralized protocols. Interest in Web3 integration and creating blockchain-powered applications.
+              </p>
+              <div class="crypto-badge">Smart Contracts & Web3</div>
+            </div>
+
+            <div class="crypto-card">
+              <div class="crypto-icon">
+                <i class="fas fa-network-wired"></i>
+              </div>
+              <h3>DeFi Protocols</h3>
+              <p>
+                Exploring decentralized finance opportunities including yield farming, liquidity provision, and staking across leading blockchain platforms.
+              </p>
+              <div class="crypto-badge">DeFi & Staking</div>
+            </div>
+
+            <div class="crypto-card">
+              <div class="crypto-icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <h3>Risk Management</h3>
+              <p>
+                Implementing sophisticated portfolio management techniques, stop-loss strategies, and diversification across multiple blockchain assets.
+              </p>
+              <div class="crypto-badge">Portfolio Security</div>
+            </div>
+          </div>
+
+          <div class="crypto-interests">
+            <h3>Core Interests & Expertise</h3>
+            <div class="interests-grid">
+              <div class="interest-item">
+                <span class="interest-emoji">📈</span>
+                <span>Market Analysis</span>
+              </div>
+              <div class="interest-item">
+                <span class="interest-emoji">⛓️</span>
+                <span>Blockchain Networks</span>
+              </div>
+              <div class="interest-item">
+                <span class="interest-emoji">💡</span>
+                <span>DeFi Innovation</span>
+              </div>
+              <div class="interest-item">
+                <span class="interest-emoji">🔐</span>
+                <span>Wallet Security</span>
+              </div>
+              <div class="interest-item">
+                <span class="interest-emoji">🌐</span>
+                <span>Web3 Integration</span>
+              </div>
+              <div class="interest-item">
+                <span class="interest-emoji">💰</span>
+                <span>Yield Opportunities</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="business">
+      <div class="container">
+        <h2>Business, Stocks & Techpreneurship</h2>
+        <div class="business-content">
+          <div class="business-intro">
+            <p class="business-tagline">
+              Building businesses, investing in growth, and shaping tomorrow's tech leaders.
+            </p>
+            <p>
+              I blend market insight with entrepreneurial ambition: trading shares, evaluating startups, and learning business strategy to bring tech innovations to market. This section captures the mindset behind my business build and investment journey.
+            </p>
+          </div>
+
+          <div class="business-grid">
+            <div class="business-card">
+              <div class="business-icon">
+                <i class="fas fa-briefcase"></i>
+              </div>
+              <h3>Techpreneurship</h3>
+              <p>
+                Creating products with a founder’s perspective, from ideation to go-to-market strategy and revenue-driven growth.
+              </p>
+              <div class="business-badge">Founder Mindset</div>
+            </div>
+
+            <div class="business-card">
+              <div class="business-icon">
+                <i class="fas fa-chart-pie"></i>
+              </div>
+              <h3>Stocks & Shares</h3>
+              <p>
+                Investing in companies that drive innovation and long-term value, balancing growth potential with disciplined risk management.
+              </p>
+              <div class="business-badge">Equities & Value</div>
+            </div>
+
+            <div class="business-card">
+              <div class="business-icon">
+                <i class="fas fa-lightbulb"></i>
+              </div>
+              <h3>Business Learning</h3>
+              <p>
+                Continuously learning frameworks in strategy, finance, leadership, and product-market fit to build sustainable technology ventures.
+              </p>
+              <div class="business-badge">Strategy & Growth</div>
+            </div>
+
+            <div class="business-card">
+              <div class="business-icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <h3>Market Insight</h3>
+              <p>
+                Tracking industry shifts, customer behavior, and competitive landscapes to identify high-potential opportunities.
+              </p>
+              <div class="business-badge">Opportunity Radar</div>
+            </div>
+          </div>
+
+          <div class="business-highlights">
+            <h3>Business Focus Areas</h3>
+            <div class="highlights-grid">
+              <div class="highlight-item">
+                <span class="highlight-icon">📊</span>
+                <span>Financial Analysis</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">🚀</span>
+                <span>Startup Growth</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">🧠</span>
+                <span>Product Leadership</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">💼</span>
+                <span>Corporate Strategy</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">🌱</span>
+                <span>Sustainable Scaling</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">🧭</span>
+                <span>Market Navigation</span>
               </div>
             </div>
           </div>

@@ -1,4 +1,4 @@
-// Navbar scroll effect
+// Navbar scroll effect and active section detection
 window.addEventListener("scroll", () => {
   const navbar = document.querySelector(".navbar");
   if (window.scrollY > 50) {
@@ -6,6 +6,26 @@ window.addEventListener("scroll", () => {
   } else {
     navbar.classList.remove("scrolled");
   }
+
+  // Update active nav link based on scroll position
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".nav-links a");
+
+  let current = "";
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+    if (window.scrollY >= sectionTop - 200) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navLinks.forEach((link) => {
+    link.classList.remove("active");
+    if (link.getAttribute("href").slice(1) === current) {
+      link.classList.add("active");
+    }
+  });
 });
 
 // Smooth scroll
@@ -48,6 +68,45 @@ contactForm.addEventListener("submit", (e) => {
 
   // Reset form
   contactForm.reset();
+});
+
+// Certificate Modal
+const certificateModal = document.getElementById("certificateModal");
+const modalImage = document.getElementById("modalImage");
+const modalTitle = document.getElementById("modalTitle");
+const modalClose = document.querySelector(".modal-close");
+const certificateCards = document.querySelectorAll(".certificate-card");
+
+certificateCards.forEach((card) => {
+  card.addEventListener("click", () => {
+    const certImage = card.getAttribute("data-cert-image");
+    const certTitle = card.querySelector(".certificate-title").textContent;
+    
+    modalImage.src = certImage;
+    modalTitle.textContent = certTitle;
+    certificateModal.classList.add("active");
+    document.body.classList.add("modal-open");
+  });
+});
+
+modalClose.addEventListener("click", () => {
+  certificateModal.classList.remove("active");
+  document.body.classList.remove("modal-open");
+});
+
+certificateModal.addEventListener("click", (e) => {
+  if (e.target === certificateModal) {
+    certificateModal.classList.remove("active");
+    document.body.classList.remove("modal-open");
+  }
+});
+
+// Close modal on Escape key
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && certificateModal.classList.contains("active")) {
+    certificateModal.classList.remove("active");
+    document.body.classList.remove("modal-open");
+  }
 });
 
 // Mobile menu toggle
@@ -104,7 +163,7 @@ const featuredProjects = [
     "try-it-link": "",
   },
   {
-    image: "./reclaima.png",
+    image: "./Reclaima.png",
     "project-name": "Reclaima",
     "project-description": "Reconnecting you with your lost items",
     "project-tech-tags": [
