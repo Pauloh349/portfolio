@@ -365,6 +365,18 @@ h2::after {
   .nav-links a {
     font-size: 1.3rem;
   }
+
+  .hero-contact-cards {
+    flex-direction: column;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-social-links {
+    justify-content: flex-start;
+  }
 }
 
 /* HERO SECTION */
@@ -481,6 +493,42 @@ h2::after {
   flex-wrap: wrap;
 }
 
+.hero-contact-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.8rem;
+}
+
+.contact-card {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.95rem 1.2rem;
+  border-radius: 14px;
+  background: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  color: var(--light);
+  text-decoration: none;
+  transition: var(--transition);
+  font-size: 0.98rem;
+}
+
+.contact-card:hover {
+  transform: translateY(-3px);
+  background: rgba(16, 185, 129, 0.18);
+  border-color: rgba(16, 185, 129, 0.4);
+}
+
+.contact-card--location {
+  cursor: default;
+}
+
+.contact-card i {
+  color: var(--primary);
+  min-width: 22px;
+  text-align: center;
+}
 
 /* ABOUT SECTION */
 .about-content {
@@ -986,16 +1034,101 @@ button[type="submit"]:hover {
   text-align: center;
 }
 
-.copyright {
-  color: var(--gray);
-  font-size: 0.9rem;
-  padding-top: 2rem;
-  border-top: 1px solid rgba(99, 102, 241, 0.2);
-  width: 100%;
-}
-
 footer {
   background: linear-gradient(135deg, #0f172a 0%, #1a2a4a 100%);
+  padding: 4rem 0 2rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.footer-column h3 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.footer-logo {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: var(--light);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.footer-logo span {
+  color: var(--primary);
+}
+
+.footer-column p {
+  color: var(--gray);
+  line-height: 1.8;
+}
+
+.footer-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 1rem;
+  color: var(--gray);
+}
+
+.footer-contact-item i {
+  color: var(--primary);
+  min-width: 24px;
+}
+
+.footer-contact-item a,
+.footer-contact-item span {
+  color: var(--gray);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-contact-item a:hover {
+  color: var(--light);
+}
+
+.footer-social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.footer-social-links a {
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  color: var(--light);
+  transition: var(--transition);
+}
+
+.footer-social-links a:hover {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+  color: white;
+  transform: translateY(-3px);
+}
+
+.footer-bottom {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: center;
+  color: var(--gray);
+  font-size: 0.95rem;
 }
 
 /* CRYPTO SECTION */

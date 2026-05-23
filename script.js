@@ -55,20 +55,22 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 // Form submission
 const contactForm = document.getElementById("contactForm");
 
-contactForm.addEventListener("submit", (e) => {
-  e.preventDefault();
+if (contactForm) {
+  contactForm.addEventListener("submit", (e) => {
+    e.preventDefault();
 
-  // Get form values
-  const name = document.getElementById("name").value;
-  const subject = document.getElementById("subject").value;
-  const message = document.getElementById("message").value;
-  const phoneNumber = document.getElementById("telephone").value;
+    // Get form values
+    const name = document.getElementById("name").value;
+    const subject = document.getElementById("subject").value;
+    const message = document.getElementById("message").value;
+    const phoneNumber = document.getElementById("telephone").value;
 
-  window.location.href = `mailto:pauloh@duck.com?subject=Hi my name is ${name}, ${subject}&body=${message}, for more information you can reach me via ${phoneNumber}`;
+    window.location.href = `mailto:pauloh@duck.com?subject=Hi my name is ${name}, ${subject}&body=${message}, for more information you can reach me via ${phoneNumber}`;
 
-  // Reset form
-  contactForm.reset();
-});
+    // Reset form
+    contactForm.reset();
+  });
+}
 
 // Certificate Modal
 const certificateModal = document.getElementById("certificateModal");
