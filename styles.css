@@ -7,7 +7,7 @@
   --light: #f1f5f9;
   --gray: #cbd5e1;
   --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  
+
   /* Section colors */
   --section-hero: #0f172a;
   --section-about: #132f4c;
@@ -601,7 +601,11 @@ h2::after {
   flex-direction: column;
   height: 100%;
   min-height: 620px;
-  background: linear-gradient(135deg, rgba(16, 185, 129, 0.08) 0%, rgba(14, 165, 233, 0.05) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(16, 185, 129, 0.08) 0%,
+    rgba(14, 165, 233, 0.05) 100%
+  );
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 5px 25px rgba(16, 185, 129, 0.15);
@@ -733,7 +737,11 @@ h2::after {
 }
 
 .certificate-card {
-  background: linear-gradient(135deg, rgba(16, 185, 129, 0.08) 0%, rgba(14, 165, 233, 0.05) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(16, 185, 129, 0.08) 0%,
+    rgba(14, 165, 233, 0.05) 100%
+  );
   border: 1px solid rgba(16, 185, 129, 0.2);
   border-radius: 15px;
   overflow: hidden;
@@ -875,7 +883,11 @@ h2::after {
 }
 
 .skill-category {
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.08) 0%, rgba(139, 92, 246, 0.05) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(99, 102, 241, 0.08) 0%,
+    rgba(139, 92, 246, 0.05) 100%
+  );
   border-radius: 15px;
   padding: 2.5rem;
   border: 1px solid rgba(99, 102, 241, 0.2);
@@ -884,7 +896,11 @@ h2::after {
 }
 
 .skill-category:hover {
-  background: linear-gradient(135deg, rgba(16, 185, 129, 0.12) 0%, rgba(14, 165, 233, 0.08) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(16, 185, 129, 0.12) 0%,
+    rgba(14, 165, 233, 0.08) 100%
+  );
   box-shadow: 0 8px 30px rgba(16, 185, 129, 0.2);
 }
 
@@ -980,7 +996,11 @@ h2::after {
 }
 
 .contact-form {
-  background: linear-gradient(135deg, rgba(16, 185, 129, 0.08) 0%, rgba(14, 165, 233, 0.05) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(16, 185, 129, 0.08) 0%,
+    rgba(14, 165, 233, 0.05) 100%
+  );
   padding: 2.5rem;
   border-radius: 15px;
   border: 1px solid rgba(16, 185, 129, 0.2);
@@ -1155,22 +1175,24 @@ footer {
   left: -50%;
   width: 200%;
   height: 100%;
-  background: radial-gradient(
-    circle at 20% 50%,
-    rgba(99, 102, 241, 0.1) 0%,
-    transparent 50%
-  ),
-  radial-gradient(
-    circle at 80% 80%,
-    rgba(139, 92, 246, 0.08) 0%,
-    transparent 50%
-  );
+  background:
+    radial-gradient(
+      circle at 20% 50%,
+      rgba(99, 102, 241, 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 80%,
+      rgba(139, 92, 246, 0.08) 0%,
+      transparent 50%
+    );
   pointer-events: none;
   animation: driftBackground 20s ease-in-out infinite;
 }
 
 @keyframes driftBackground {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateX(0);
   }
   50% {
@@ -1214,7 +1236,11 @@ footer {
 }
 
 .crypto-card {
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.08) 0%, rgba(139, 92, 246, 0.05) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(99, 102, 241, 0.08) 0%,
+    rgba(139, 92, 246, 0.05) 100%
+  );
   border: 1px solid rgba(99, 102, 241, 0.2);
   border-radius: 15px;
   padding: 2.5rem;
@@ -1234,13 +1260,22 @@ footer {
   left: 0;
   width: 100%;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(99, 102, 241, 0.5), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(99, 102, 241, 0.5),
+    transparent
+  );
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
 .crypto-card:hover {
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(139, 92, 246, 0.1) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(99, 102, 241, 0.15) 0%,
+    rgba(139, 92, 246, 0.1) 100%
+  );
   border-color: rgba(99, 102, 241, 0.4);
   box-shadow: 0 10px 40px rgba(99, 102, 241, 0.2);
   transform: translateY(-8px);
@@ -1253,7 +1288,11 @@ footer {
 .crypto-icon {
   width: 80px;
   height: 80px;
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(139, 92, 246, 0.1));
+  background: linear-gradient(
+    135deg,
+    rgba(99, 102, 241, 0.15),
+    rgba(139, 92, 246, 0.1)
+  );
   border: 2px solid rgba(99, 102, 241, 0.3);
   border-radius: 15px;
   display: flex;
@@ -1303,7 +1342,11 @@ footer {
 }
 
 .crypto-interests {
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.08) 0%, rgba(139, 92, 246, 0.05) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(99, 102, 241, 0.08) 0%,
+    rgba(139, 92, 246, 0.05) 100%
+  );
   border: 1px solid rgba(99, 102, 241, 0.2);
   border-radius: 15px;
   padding: 3rem;
@@ -1397,7 +1440,11 @@ footer {
 }
 
 .business-card {
-  background: linear-gradient(135deg, rgba(249, 115, 22, 0.08) 0%, rgba(250, 204, 21, 0.06) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(249, 115, 22, 0.08) 0%,
+    rgba(250, 204, 21, 0.06) 100%
+  );
   border: 1px solid rgba(249, 115, 22, 0.2);
   border-radius: 18px;
   padding: 2.5rem;
@@ -1417,7 +1464,11 @@ footer {
 .business-icon {
   width: 80px;
   height: 80px;
-  background: linear-gradient(135deg, rgba(249, 115, 22, 0.15), rgba(244, 63, 94, 0.12));
+  background: linear-gradient(
+    135deg,
+    rgba(249, 115, 22, 0.15),
+    rgba(244, 63, 94, 0.12)
+  );
   border: 2px solid rgba(249, 115, 22, 0.3);
   border-radius: 18px;
   display: flex;
@@ -1454,7 +1505,11 @@ footer {
 }
 
 .business-highlights {
-  background: linear-gradient(135deg, rgba(249, 115, 22, 0.08) 0%, rgba(244, 63, 94, 0.05) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(249, 115, 22, 0.08) 0%,
+    rgba(244, 63, 94, 0.05) 100%
+  );
   border: 1px solid rgba(249, 115, 22, 0.2);
   border-radius: 18px;
   padding: 3rem;
