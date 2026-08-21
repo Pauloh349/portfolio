@@ -5,7 +5,7 @@ export default function Footer() {
         <div className="footer-grid">
           <div className="footer-column footer-brand">
             <a href="#hero" className="footer-logo">
-              <i className="fas fa-code"></i>
+              <i className="fa-solid fa-code"></i>
               Paul<span>M.</span>
             </a>
             <p>
@@ -17,15 +17,15 @@ export default function Footer() {
           <div className="footer-column footer-contact">
             <h3>Contact</h3>
             <div className="footer-contact-item">
-              <i className="fas fa-envelope"></i>
+              <i className="fa-solid fa-envelope"></i>
               <a href="mailto:pauloh@duck.com">pauloh@duck.com</a>
             </div>
             <div className="footer-contact-item">
-              <i className="fas fa-phone"></i>
+              <i className="fa-solid fa-phone"></i>
               <a href="tel:+254794300699">+254 794 300 699</a>
             </div>
             <div className="footer-contact-item">
-              <i className="fas fa-map-marker-alt"></i>
+              <i className="fa-solid fa-map-marker-alt"></i>
               <span>Nakuru, Kenya</span>
             </div>
           </div>

@@ -20,7 +20,7 @@ export default function CryptoSection() {
           <div className="crypto-grid">
             <div className="crypto-card">
               <div className="crypto-icon">
-                <i className="fas fa-chart-line"></i>
+                <i className="fa-solid fa-chart-line"></i>
               </div>
               <h3>Trading Strategy</h3>
               <p>
@@ -33,7 +33,7 @@ export default function CryptoSection() {
 
             <div className="crypto-card">
               <div className="crypto-icon">
-                <i className="fas fa-cube"></i>
+                <i className="fa-solid fa-cube"></i>
               </div>
               <h3>Blockchain Development</h3>
               <p>
@@ -46,7 +46,7 @@ export default function CryptoSection() {
 
             <div className="crypto-card">
               <div className="crypto-icon">
-                <i className="fas fa-network-wired"></i>
+                <i className="fa-solid fa-network-wired"></i>
               </div>
               <h3>DeFi Protocols</h3>
               <p>
@@ -59,7 +59,7 @@ export default function CryptoSection() {
 
             <div className="crypto-card">
               <div className="crypto-icon">
-                <i className="fas fa-shield-alt"></i>
+                <i className="fa-solid fa-shield-alt"></i>
               </div>
               <h3>Risk Management</h3>
               <p>

@@ -20,7 +20,7 @@ export default function BusinessSection() {
           <div className="business-grid">
             <div className="business-card">
               <div className="business-icon">
-                <i className="fas fa-briefcase"></i>
+                <i className="fa-solid fa-briefcase"></i>
               </div>
               <h3>Techpreneurship</h3>
               <p>
@@ -32,7 +32,7 @@ export default function BusinessSection() {
 
             <div className="business-card">
               <div className="business-icon">
-                <i className="fas fa-chart-pie"></i>
+                <i className="fa-solid fa-chart-pie"></i>
               </div>
               <h3>Stocks & Shares</h3>
               <p>
@@ -45,7 +45,7 @@ export default function BusinessSection() {
 
             <div className="business-card">
               <div className="business-icon">
-                <i className="fas fa-lightbulb"></i>
+                <i className="fa-solid fa-lightbulb"></i>
               </div>
               <h3>Business Learning</h3>
               <p>
@@ -58,7 +58,7 @@ export default function BusinessSection() {
 
             <div className="business-card">
               <div className="business-icon">
-                <i className="fas fa-users"></i>
+                <i className="fa-solid fa-users"></i>
               </div>
               <h3>Market Insight</h3>
               <p>

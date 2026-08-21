@@ -27,7 +27,7 @@ export default function NavBar() {
     <nav className={`navbar${hasScrolled ? " scrolled" : ""}`} aria-label="Primary navigation">
       <div className="container nav-container">
         <a href="#person" className="logo" onClick={closeMenu}>
-          <i className="fas fa-code" aria-hidden="true"></i>
+          <i className="fa-solid fa-code" aria-hidden="true"></i>
           Paul<span>M.</span>
         </a>
         <ul className={`nav-links${isMenuOpen ? " active" : ""}`} id="primary-navigation">

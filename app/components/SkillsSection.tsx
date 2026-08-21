@@ -6,12 +6,12 @@ export default function SkillsSection() {
         <div className="skills-container">
           <div className="skill-category">
             <h3>
-              <i className="fas fa-laptop-code"></i> Frontend
+              <i className="fa-solid fa-laptop-code"></i> Frontend
             </h3>
             <div className="skill-list">
               <div className="skill-item">
                 <div className="skill-icon">
-                  <i className="fab fa-react"></i>
+                  <i className="fa-brands fa-react"></i>
                 </div>
                 <div className="skill-info">
                   <h4>React & React Native</h4>
@@ -20,7 +20,7 @@ export default function SkillsSection() {
               </div>
               <div className="skill-item">
                 <div className="skill-icon">
-                  <i className="fab fa-js"></i>
+                  <i className="fa-brands fa-js"></i>
                 </div>
                 <div className="skill-info">
                   <h4>JavaScript & TypeScript</h4>
@@ -29,7 +29,7 @@ export default function SkillsSection() {
               </div>
               <div className="skill-item">
                 <div className="skill-icon">
-                  <i className="fab fa-css3-alt"></i>
+                  <i className="fa-brands fa-css3-alt"></i>
                 </div>
                 <div className="skill-info">
                   <h4>CSS & Preprocessors</h4>
@@ -41,12 +41,12 @@ export default function SkillsSection() {
 
           <div className="skill-category">
             <h3>
-              <i className="fas fa-server"></i> Backend
+              <i className="fa-solid fa-server"></i> Backend
             </h3>
             <div className="skill-list">
               <div className="skill-item">
                 <div className="skill-icon">
-                  <i className="fab fa-node-js"></i>
+                  <i className="fa-brands fa-node-js"></i>
                 </div>
                 <div className="skill-info">
                   <h4>Node.js & Express</h4>
@@ -55,7 +55,7 @@ export default function SkillsSection() {
               </div>
               <div className="skill-item">
                 <div className="skill-icon">
-                  <i className="fas fa-database"></i>
+                  <i className="fa-solid fa-database"></i>
                 </div>
                 <div className="skill-info">
                   <h4>Databases</h4>
@@ -67,12 +67,12 @@ export default function SkillsSection() {
 
           <div className="skill-category">
             <h3>
-              <i className="fas fa-cloud"></i> Cloud & DevOps
+              <i className="fa-solid fa-cloud"></i> Cloud & DevOps
             </h3>
             <div className="skill-list">
               <div className="skill-item">
                 <div className="skill-icon">
-                  <i className="fab fa-google"></i>
+                  <i className="fa-brands fa-google"></i>
                 </div>
                 <div className="skill-info">
                   <h4>Google Cloud</h4>
@@ -81,7 +81,7 @@ export default function SkillsSection() {
               </div>
               <div className="skill-item">
                 <div className="skill-icon">
-                  <i className="fab fa-docker"></i>
+                  <i className="fa-brands fa-docker"></i>
                 </div>
                 <div className="skill-info">
                   <h4>Containerization</h4>

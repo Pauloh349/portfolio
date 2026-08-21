@@ -27,7 +27,7 @@ export default function AboutMe() {
           <div className="about-details">
             <div className="detail-item">
               <h3>
-                <i className="fas fa-graduation-cap"></i> Education
+                <i className="fa-solid fa-graduation-cap"></i> Education
               </h3>
               <p>Egerton University</p>
               <p>BSc Applied Computer Science</p>
@@ -35,7 +35,7 @@ export default function AboutMe() {
             </div>
             <div className="detail-item">
               <h3>
-                <i className="fas fa-briefcase"></i> Experience
+                <i className="fa-solid fa-briefcase"></i> Experience
               </h3>
               <p>Full-Stack Developer</p>
               <p>2022 - Present</p>
@@ -43,13 +43,13 @@ export default function AboutMe() {
 
             <div className="detail-item">
               <h3>
-                <i className="fas fa-briefcase"></i> Attachment
+                <i className="fa-solid fa-briefcase"></i> Attachment
               </h3>
               <p>Context Experts Agencies Limited, Ruiru</p>
             </div>
             <div className="detail-item">
               <h3>
-                <i className="fas fa-map-marker-alt"></i> Location
+                <i className="fa-solid fa-map-marker-alt"></i> Location
               </h3>
               <p>Nakuru, Kenya</p>
             </div>
