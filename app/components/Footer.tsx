@@ -29,29 +29,9 @@ export default function Footer() {
               <span>Nakuru, Kenya</span>
             </div>
           </div>
-          <div className="footer-column footer-connect">
-            <h3>Stay Connected</h3>
-            <p>
-              Follow my latest work, crypto ideas, and business-focused builds.
-            </p>
-            <div className="footer-social-links">
-              <a href="https://wa.me/+254794300699">
-                <i className="fab fa-whatsapp"></i>
-              </a>
-              <a href="https://github.com/pauloh349">
-                <i className="fab fa-github"></i>
-              </a>
-              <a href="https://www.x.com/Plumace1">
-                <i className="fab fa-twitter"></i>
-              </a>
-              <a href="https://www.instagram.com/thee_pauloh/">
-                <i className="fab fa-instagram"></i>
-              </a>
-            </div>
-          </div>
         </div>
         <div className="footer-bottom">
-          <p>&copy; 2025 Paul Muiruri. All rights reserved.</p>
+          <p>&copy; 2026 Paul Muiruri. All rights reserved.</p>
         </div>
       </div>
     </footer>
