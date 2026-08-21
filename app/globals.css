@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Lora:wght@400;500;600&family=Playfair+Display:wght@600;700;800&display=swap");
-
 :root {
   --primary: #22c55e;
   --primary-dark: #16a34a;
@@ -29,7 +27,12 @@
 body {
   background: var(--darker);
   color: var(--light);
-  font-family: "Lora", serif;
+  /*
+   * Keep the first paint independent of a third-party font request. The
+   * previous Google Fonts @import delayed the entire stylesheet from applying
+   * on a cold visit.
+   */
+  font-family: Georgia, "Times New Roman", serif;
   line-height: 1.7;
   overflow-x: hidden;
   position: relative;
@@ -117,7 +120,7 @@ h3,
 h4 {
   font-weight: 700;
   line-height: 1.2;
-  font-family: "Playfair Display", serif;
+  font-family: Georgia, "Times New Roman", serif;
   letter-spacing: 0.3px;
 }
 

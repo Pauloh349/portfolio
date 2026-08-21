@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import "./globals.css";
 import { siteUrl } from "./site";
 
@@ -125,10 +126,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <head>
         <link rel="icon" href="/paul-muiruri.webp" />
 
-        <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
-
         <link
-          rel="stylesheet"
+          rel="preload"
+          as="style"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         />
 
@@ -140,7 +140,15 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         />
       </head>
 
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {children}
+        <Script id="load-font-awesome" strategy="lazyOnload">
+          {`const link = document.createElement("link");
+link.rel = "stylesheet";
+link.href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css";
+document.head.appendChild(link);`}
+        </Script>
+      </body>
     </html>
   );
 }
