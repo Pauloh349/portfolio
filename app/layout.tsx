@@ -4,7 +4,7 @@ import { siteUrl } from "./site";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Paul Muiruri (Pauloh) | Full-Stack Developer & Cloud Architect",
+  title: "Paul Muiruri Pauloh | Full-Stack Developer & Cloud Architect",
   description:
     "Paul Muiruri (Pauloh) is a full-stack developer and cloud architect in Nakuru, Kenya, building scalable web and mobile applications with React, React Native, Node.js, Firebase, and Google Cloud.",
   applicationName: "Paul Muiruri Portfolio",
