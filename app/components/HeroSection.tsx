@@ -7,7 +7,7 @@ export default function HeroSection() {
         <div className="hero-text">
           <h3>Hello, I&apos;m</h3>
 
-          <h1>Paul Njuguna Muiruri</h1>
+          <h1>Paul Muiruri</h1>
 
           <p>
             Paul Muiruri, also known as Pauloh, is a Full-Stack Developer &
