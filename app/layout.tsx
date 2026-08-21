@@ -1,7 +1,9 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import { siteUrl } from "./site";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "Paul Muiruri (Pauloh) | Full-Stack Developer & Cloud Architect",
   description:
     "Paul Muiruri (Pauloh) is a full-stack developer and cloud architect in Nakuru, Kenya, building scalable web and mobile applications with React, React Native, Node.js, Firebase, and Google Cloud.",
@@ -23,11 +25,12 @@ export const metadata: Metadata = {
   verification: { google: "6ZHjrDkkdft6EqtMpUOnAJoCH1WtSrao5GwHl98MWjE" },
   openGraph: {
     type: "profile",
-    title: "Paul Muiruri (Pauloh) | Full-Stack Developer & Cloud Architect",
+    title: "Paul Muiruri Pauloh | Full-Stack Developer & Cloud Architect",
     description:
       "Full-stack web, mobile, and cloud engineer based in Nakuru, Kenya.",
     firstName: "Paul",
     lastName: "Muiruri",
+    url: siteUrl,
   },
   twitter: {
     card: "summary",
@@ -35,11 +38,20 @@ export const metadata: Metadata = {
     description:
       "Full-stack web, mobile, and cloud engineer based in Nakuru, Kenya.",
   },
+  alternates: { canonical: "/" },
   robots: {
     index: true,
     follow: true,
     googleBot: { index: true, follow: true },
   },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+  themeColor: "#0f172a",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

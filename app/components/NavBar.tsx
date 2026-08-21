@@ -34,7 +34,7 @@ export default function NavBar() {
           {links.map(([id, label]) => <li key={id}><a href={`#${id}`} className={activeSection === id ? "active" : undefined} onClick={closeMenu}>{label}</a></li>)}
         </ul>
         <button className="mobile-menu-btn" type="button" onClick={() => setIsMenuOpen((open) => !open)} aria-expanded={isMenuOpen} aria-controls="primary-navigation" aria-label={isMenuOpen ? "Close navigation menu" : "Open navigation menu"}>
-          <i className={`fas ${isMenuOpen ? "fa-times" : "fa-bars"}`} aria-hidden="true"></i>
+          <span aria-hidden="true">{isMenuOpen ? "×" : "☰"}</span>
         </button>
       </div>
     </nav></>

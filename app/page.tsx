@@ -17,14 +17,35 @@ export default function Home() {
     alternateName: "Pauloh",
     jobTitle: "Full-Stack Developer and Cloud Solutions Architect",
     email: "mailto:pauloh@duck.com",
-    address: { "@type": "PostalAddress", addressLocality: "Nakuru", addressCountry: "KE" },
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Nakuru",
+      addressCountry: "KE",
+    },
     alumniOf: { "@type": "CollegeOrUniversity", name: "Egerton University" },
-    sameAs: ["https://github.com/pauloh349", "https://www.linkedin.com/in/paul-muiruri-34b734338", "https://www.x.com/Plumace1", "https://www.instagram.com/thee_pauloh/"],
-    knowsAbout: ["React", "React Native", "Node.js", "Firebase", "Google Cloud", "Cloud Architecture"],
+    sameAs: [
+      "https://github.com/pauloh349",
+      "https://www.linkedin.com/in/paul-muiruri-34b734338",
+      "https://www.x.com/Plumace1",
+      "https://www.instagram.com/thee_pauloh/",
+    ],
+    knowsAbout: [
+      "React",
+      "React Native",
+      "Node.js",
+      "Firebase",
+      "Google Cloud",
+      "Cloud Architecture",
+    ],
   };
   return (
     <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\\u003c") }} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData).replace(/</g, "\\u003c"),
+        }}
+      />
       <NavBar />
       <HeroSection />
       <AboutMe />

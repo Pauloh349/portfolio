@@ -303,6 +303,12 @@ h2::after {
   cursor: pointer;
   z-index: 1002;
   position: relative;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .mobile-nav-overlay {
@@ -324,7 +330,7 @@ h2::after {
 /* MOBILE NAVIGATION STYLES */
 @media (max-width: 768px) {
   .mobile-menu-btn {
-    display: block;
+    display: inline-flex;
   }
 
   .nav-links {
