@@ -49,8 +49,8 @@ export default function Home() {
       <NavBar />
       <HeroSection />
       <AboutMe />
-      <SkillsSection />
       <ProjectsSection />
+      <SkillsSection />
       <CertificatesSection />
       <CryptoSection />
       <BusinessSection />

@@ -2,11 +2,11 @@
 
 import { useEffect, useState } from "react";
 
-const links = [["hero", "Home"], ["about", "About"], ["projects", "Projects"], ["certification", "Certification"], ["skills", "Skills"], ["crypto", "Crypto"], ["business", "Business"], ["footer", "Contact"]] as const;
+const links = [["person", "Home"], ["about", "About"], ["projects", "Projects"], ["skills", "Skills"],["certification", "Certification"], ["crypto", "Crypto"], ["business", "Business"], ["footer", "Contact"]] as const;
 
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState("hero");
+  const [activeSection, setActiveSection] = useState("person");
   const [hasScrolled, setHasScrolled] = useState(false);
   useEffect(() => {
     const onScroll = () => {
@@ -14,7 +14,7 @@ export default function NavBar() {
       setActiveSection(links.reduce((current, [id]) => {
         const section = document.getElementById(id);
         return section && window.scrollY >= section.offsetTop - 200 ? id : current;
-      }, "hero"));
+      }, "person"));
     };
     onScroll(); window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
@@ -26,7 +26,7 @@ export default function NavBar() {
       <div className={`mobile-nav-overlay${isMenuOpen ? " active" : ""}`} onClick={closeMenu} aria-hidden="true" />
     <nav className={`navbar${hasScrolled ? " scrolled" : ""}`} aria-label="Primary navigation">
       <div className="container nav-container">
-        <a href="#hero" className="logo" onClick={closeMenu}>
+        <a href="#person" className="logo" onClick={closeMenu}>
           <i className="fas fa-code" aria-hidden="true"></i>
           Paul<span>M.</span>
         </a>
