@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { FaMapMarkerAlt } from "react-icons/fa";
 import {
   FaEnvelope,
   FaGithub,
@@ -74,7 +75,7 @@ export default function HeroSection() {
             </a>
 
             <div className="contact-card contact-card--location">
-              <FaLocationPin role="img" aria-label="Location" />
+              <FaMapMarkerAlt role="img" aria-label="Location" />
               <span>Nakuru, Kenya</span>
             </div>
           </div>

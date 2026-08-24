@@ -123,20 +123,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className="h-full antialiased" suppressHydrationWarning>
       <head>
-        <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
-
-        <link
-          rel="stylesheet"
-          // as="style"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        />
-
-        <noscript>
-          <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-          />
-        </noscript>
+        
 
         <link
           rel="apple-touch-icon"

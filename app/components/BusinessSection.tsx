@@ -1,3 +1,5 @@
+import { FaBriefcase, FaChartPie, FaLightbulb } from "react-icons/fa6";
+
 export default function BusinessSection() {
   return (
     <section id="business">
@@ -21,7 +23,7 @@ export default function BusinessSection() {
           <div className="business-grid">
             <div className="business-card">
               <div className="business-icon">
-                <i className="fa-solid fa-briefcase"></i>
+                <FaBriefcase role="img" aria-label="Entrepreneurship" />
               </div>
               <h3>Tech Entrepreneurship</h3>
               <p>
@@ -32,7 +34,7 @@ export default function BusinessSection() {
 
             <div className="business-card">
               <div className="business-icon">
-                <i className="fa-solid fa-chart-pie"></i>
+                <FaChartPie role="img" aria-label="Investing" />
               </div>
               <h3>Investing</h3>
               <p>
@@ -43,7 +45,7 @@ export default function BusinessSection() {
 
             <div className="business-card">
               <div className="business-icon">
-                <i className="fa-solid fa-lightbulb"></i>
+                <FaLightbulb role="img" aria-label="Business Strategy" />
               </div>
               <h3>Business Strategy</h3>
               <p>

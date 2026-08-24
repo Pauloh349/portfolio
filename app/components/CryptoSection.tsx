@@ -1,3 +1,5 @@
+import { FaChartLine, FaCube, FaNetworkWired } from "react-icons/fa6";
+
 export default function CryptoSection() {
   return (
     <section id="crypto">
@@ -20,7 +22,7 @@ export default function CryptoSection() {
           <div className="crypto-grid">
             <div className="crypto-card">
               <div className="crypto-icon">
-                <i className="fa-solid fa-chart-line"></i>
+                <FaChartLine role="img" aria-label="Crypto Trading" />
               </div>
               <h3>Crypto Trading</h3>
               <p>Market analysis, trading strategies, and risk management.</p>
@@ -28,7 +30,7 @@ export default function CryptoSection() {
 
             <div className="crypto-card">
               <div className="crypto-icon">
-                <i className="fa-solid fa-cube"></i>
+                <FaCube role="img" aria-label="Blockchain" />
               </div>
               <h3>Blockchain</h3>
               <p>
@@ -38,7 +40,7 @@ export default function CryptoSection() {
 
             <div className="crypto-card">
               <div className="crypto-icon">
-                <i className="fa-solid fa-network-wired"></i>
+                <FaNetworkWired role="img" aria-label="DeFi" />
               </div>
               <h3>DeFi</h3>
               <p>

@@ -1,3 +1,6 @@
+import { FaMapMarkerAlt } from "react-icons/fa";
+import { FaEnvelope, FaPhone } from "react-icons/fa6";
+
 export default function Footer() {
   return (
     <footer id="footer">
@@ -17,15 +20,15 @@ export default function Footer() {
           <div className="footer-column footer-contact">
             <h3>Contact</h3>
             <div className="footer-contact-item">
-              <i className="fa-solid fa-envelope"></i>
+              <FaEnvelope role="img" aria-label="Email" />
               <a href="mailto:pauloh@duck.com">pauloh@duck.com</a>
             </div>
             <div className="footer-contact-item">
-              <i className="fa-solid fa-phone"></i>
+              <FaPhone role="img" aria-label="Phone" />
               <a href="tel:+254794300699">+254794300699</a>
             </div>
             <div className="footer-contact-item">
-              <i className="fa-solid fa-map-marker-alt"></i>
+              <FaMapMarkerAlt role="img" aria-label="Location" />
               <span>Nakuru, Kenya</span>
             </div>
           </div>
