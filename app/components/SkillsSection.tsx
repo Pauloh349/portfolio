@@ -1,5 +1,4 @@
 import {
-  FaCloud,
   FaCss3,
   FaDatabase,
   FaDocker,
@@ -10,56 +9,62 @@ import {
 } from "react-icons/fa6";
 import { RiNextjsLine } from "react-icons/ri";
 import { SiGooglecloud, SiTypescript } from "react-icons/si";
+import { ReactElement } from "react";
+
+// ✅ Helper function to add accessibility to icons
+const createAccessibleIcon = (Icon: any, label: string): ReactElement => {
+  return <Icon role="img" aria-label={label} />;
+};
 
 const skills = [
   {
     name: "React",
-    icon: <FaReact />,
+    icon: createAccessibleIcon(FaReact, "React"),
     category: "Frontend",
   },
   {
     name: "React Native",
-    icon: <FaReact />,
+    icon: createAccessibleIcon(FaReact, "React Native"),
     category: "Mobile",
   },
   {
     name: "TypeScript",
-    icon: <SiTypescript />,
+    icon: createAccessibleIcon(SiTypescript, "TypeScript"),
     category: "Language",
   },
   {
     name: "JavaScript",
-    icon: <FaJs />,
+    icon: createAccessibleIcon(FaJs, "JavaScript"),
     category: "Language",
   },
   {
     name: "Next.js",
-    icon: <RiNextjsLine />,
+    icon: createAccessibleIcon(RiNextjsLine, "Next.js"),
     category: "Full Stack",
   },
   {
     name: "Node.js",
-    icon: <FaNodeJs />,
+    icon: createAccessibleIcon(FaNodeJs, "Node.js"),
     category: "Backend",
   },
   {
     name: "MongoDB",
-    icon: <FaDatabase />,
+    icon: createAccessibleIcon(FaDatabase, "MongoDB"),
     category: "Database",
   },
   {
     name: "Firebase",
-    icon: <SiGooglecloud />,
+    icon: createAccessibleIcon(SiGooglecloud, "Firebase"),
     category: "Cloud",
   },
   {
     name: "Docker",
-    icon: <FaDocker />,
+    icon: createAccessibleIcon(FaDocker, "Docker"),
     category: "DevOps",
   },
   {
     name: "CSS",
-    icon: <FaCss3 />,
+    icon: createAccessibleIcon(FaCss3, "CSS"),
     category: "Frontend",
   },
 ];
@@ -73,7 +78,7 @@ export default function SkillsSection() {
         <div className="skills-showcase">
           <div className="skills-center">
             <div className="skills-center-icon">
-              <FaServer />
+              <FaServer role="img" aria-label="Server" />
             </div>
 
             <span>Full Stack</span>

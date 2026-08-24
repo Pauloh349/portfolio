@@ -31,7 +31,7 @@ export default function HeroSection() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaWhatsapp />
+              <FaWhatsapp role="img" aria-label="WhatsApp" />
             </a>
 
             <a
@@ -40,7 +40,7 @@ export default function HeroSection() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaGithub />
+              <FaGithub role="img" aria-label="GitHub" />
             </a>
 
             <a
@@ -49,7 +49,7 @@ export default function HeroSection() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaInstagram />
+              <FaInstagram role="img" aria-label="Instagram" />
             </a>
 
             <a
@@ -58,23 +58,23 @@ export default function HeroSection() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaGooglePlay />
+              <FaGooglePlay role="img" aria-label="Google Play Store" />
             </a>
           </div>
 
           <div className="hero-contact-cards">
             <a className="contact-card" href="mailto:pauloh@duck.com">
-              <FaEnvelope />
+              <FaEnvelope role="img" aria-label="Email" />
               <span>pauloh@duck.com</span>
             </a>
 
             <a className="contact-card" href="tel:+254794300699">
-              <FaPhone />
+              <FaPhone role="img" aria-label="Phone" />
               <span>+254 794 300 699</span>
             </a>
 
             <div className="contact-card contact-card--location">
-              <FaLocationPin />
+              <FaLocationPin role="img" aria-label="Location" />
               <span>Nakuru, Kenya</span>
             </div>
           </div>
