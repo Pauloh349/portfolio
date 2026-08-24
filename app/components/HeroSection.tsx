@@ -1,4 +1,13 @@
 import Image from "next/image";
+import {
+  FaEnvelope,
+  FaGithub,
+  FaGooglePlay,
+  FaInstagram,
+  FaLocationPin,
+  FaPhone,
+  FaWhatsapp,
+} from "react-icons/fa6";
 
 export default function HeroSection() {
   return (
@@ -10,7 +19,7 @@ export default function HeroSection() {
           <h1>Paul Muiruri</h1>
 
           <p>
-            Paul Muiruri, also known as Pauloh, is a Full-Stack Developer &
+            Paul Muiruri, aka Pauloh, is a Full-Stack Developer &
             Cloud Solutions Architect from Kenya, building scalable web and
             mobile applications and cloud infrastructure.
           </p>
@@ -19,49 +28,53 @@ export default function HeroSection() {
             <a
               href="https://wa.me/+254794300699"
               aria-label="Contact Paul Muiruri on WhatsApp"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <i className="fa-brands fa-whatsapp"></i>
+              <FaWhatsapp />
             </a>
 
             <a
               href="https://github.com/pauloh349"
               aria-label="Paul Muiruri on GitHub"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <i className="fa-brands fa-github"></i>
-            </a>
-
-            <a
-              href="https://www.linkedin.com/in/paul-muiruri-34b734338"
-              aria-label="Paul Muiruri on LinkedIn"
-            >
-              <i className="fa-brands fa-linkedin"></i>
-            </a>
-
-            <a href="https://www.x.com/Plumace1" aria-label="Paul Muiruri on X">
-              <i className="fa-brands fa-twitter"></i>
+              <FaGithub />
             </a>
 
             <a
               href="https://www.instagram.com/thee_pauloh/"
               aria-label="Paul Muiruri on Instagram"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <i className="fa-brands fa-instagram"></i>
+              <FaInstagram />
+            </a>
+
+            <a
+              href="https://play.google.com/store/apps/dev?id=7675065142046547897"
+              aria-label="Paul Muiruri on Google Play Store"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGooglePlay />
             </a>
           </div>
 
           <div className="hero-contact-cards">
             <a className="contact-card" href="mailto:pauloh@duck.com">
-              <i className="fa-solid fa-envelope"></i>
+              <FaEnvelope />
               <span>pauloh@duck.com</span>
             </a>
 
             <a className="contact-card" href="tel:+254794300699">
-              <i className="fa-solid fa-phone"></i>
+              <FaPhone />
               <span>+254 794 300 699</span>
             </a>
 
             <div className="contact-card contact-card--location">
-              <i className="fa-solid fa-map-marker-alt"></i>
+              <FaLocationPin/>
               <span>Nakuru, Kenya</span>
             </div>
           </div>

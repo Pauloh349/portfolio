@@ -1,57 +1,93 @@
+import {
+  FaBriefcase,
+  FaGraduationCap,
+  FaMapMarkerAlt,
+  FaCode,
+  FaBookOpen,
+} from "react-icons/fa";
+
 export default function AboutMe() {
   return (
     <section id="about">
       <div className="container">
         <h2>About Pauloh</h2>
-        <div className="about-content">
-          <div className="about-text">
+
+        <div className="about-wrapper">
+          {/* Introduction */}
+          <div className="about-intro">
+            <span className="about-label">A little about me</span>
+
+            <h3>
+              I build things with <span>code</span> and curiosity.
+            </h3>
+
             <p>
-              I am a passionate Full-Stack Developer and Cloud Solutions
-              Architect currently pursuing a BSc in Applied Computer Science at
-              Egerton University. With over 2 years of hands-on experience, I
-              specialize in building scalable web and mobile applications,
-              implementing cloud infrastructure solutions.
+              I&apos;m a Full-Stack Developer and Applied Computer Science
+              student passionate about building useful web and mobile
+              applications.
             </p>
+
             <p>
-              My approach combines technical expertise with creative
-              problem-solving to deliver high-quality software solutions. I
-              thrive in collaborative environments and enjoy tackling complex
-              challenges that push the boundaries of technology.
+              I enjoy turning ideas into products, learning new technologies,
+              and solving problems that challenge me to think differently.
             </p>
-            <p>
-              When I&apos;m not coding, you can find me learning new things from
-              YouTube and programming language&apos;s documentation and also
-              exploring new technologies.
-            </p>
-          </div>
-          <div className="about-details">
-            <div className="detail-item">
-              <h3>
-                <i className="fa-solid fa-graduation-cap"></i> Education
-              </h3>
-              <p>Egerton University</p>
-              <p>BSc Applied Computer Science</p>
-              <p>2022 - Present</p>
+
+            <div className="about-interests">
+              <span>Development</span>
+              <span>Cloud</span>
+              <span>Mobile</span>
+              <span>Entrepreneurship</span>
             </div>
-            <div className="detail-item">
-              <h3>
-                <i className="fa-solid fa-briefcase"></i> Experience
-              </h3>
-              <p>Full-Stack Developer</p>
-              <p>2022 - Present</p>
+          </div>
+
+          {/* Journey */}
+          <div className="about-journey">
+            <div className="journey-item">
+              <div className="journey-icon">
+                <FaBriefcase />
+              </div>
+
+              <div className="journey-content">
+                <span>May 2026 - Present</span>
+                <h3>Trancova Systems Ltd, Ghana</h3>
+                <p>Internship</p>
+              </div>
             </div>
 
-            <div className="detail-item">
-              <h3>
-                <i className="fa-solid fa-briefcase"></i> Attachment
-              </h3>
-              <p>Context Experts Agencies Limited, Ruiru</p>
+            <div className="journey-item">
+              <div className="journey-icon">
+                <FaBriefcase />
+              </div>
+
+              <div className="journey-content">
+                <span>May 2025 - August 2025</span>
+                <h3>Context Experts Agencies, Ruiru</h3>
+                <p>Attachment</p>
+              </div>
             </div>
-            <div className="detail-item">
-              <h3>
-                <i className="fa-solid fa-map-marker-alt"></i> Location
-              </h3>
-              <p>Nakuru, Kenya</p>
+
+            <div className="journey-item">
+              <div className="journey-icon">
+                <FaBriefcase />
+              </div>
+
+              <div className="journey-content">
+                <span>2022 — Present</span>
+                <h3>Full-Stack Development</h3>
+                <p>Building web, mobile, and cloud-based applications.</p>
+              </div>
+            </div>
+
+            <div className="journey-item">
+              <div className="journey-icon">
+                <FaGraduationCap />
+              </div>
+
+              <div className="journey-content">
+                <span>23/08/2022 — April 2026</span>
+                <h3>Egerton University, Njoro</h3>
+                <p>BSc Applied Computer Science</p>
+              </div>
             </div>
           </div>
         </div>

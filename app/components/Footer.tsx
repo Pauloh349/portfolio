@@ -22,7 +22,7 @@ export default function Footer() {
             </div>
             <div className="footer-contact-item">
               <i className="fa-solid fa-phone"></i>
-              <a href="tel:+254794300699">+254 794 300 699</a>
+              <a href="tel:+254794300699">+254794300699</a>
             </div>
             <div className="footer-contact-item">
               <i className="fa-solid fa-map-marker-alt"></i>

@@ -1,0 +1,46 @@
+.
+├── AGENTS.md
+├── app
+│   ├── components
+│   │   ├── AboutMe.tsx
+│   │   ├── BusinessSection.tsx
+│   │   ├── CertificatesSection.tsx
+│   │   ├── CryptoSection.tsx
+│   │   ├── Footer.tsx
+│   │   ├── HeroSection.tsx
+│   │   ├── NavBar.tsx
+│   │   ├── ProjectSection.tsx
+│   │   └── SkillsSection.tsx
+│   ├── globals.css
+│   ├── layout.tsx
+│   ├── page.tsx
+│   ├── robots.ts
+│   ├── sitemap.ts
+│   └── site.ts
+├── CLAUDE.md
+├── eslint.config.mjs
+├── next.config.ts
+├── next-env.d.ts
+├── package.json
+├── package-lock.json
+├── postcss.config.mjs
+├── public
+│   ├── favicon_io
+│   │   ├── android-chrome-192x192.png
+│   │   ├── apple-touch-icon.png
+│   │   ├── favicon-16x16.png
+│   │   ├── favicon-32x32.png
+│   │   ├── favicon.ico
+│   │   └── site.webmanifest
+│   ├── geminiCert.webp
+│   ├── google8d780d5725baaa44.html
+│   ├── paul-muiruri.webp
+│   ├── Reclaima.webp
+│   ├── studyhub.webp
+│   └── tvethub.webp
+├── README.md
+├── structure.txt
+├── tsconfig.json
+└── tsconfig.tsbuildinfo
+
+5 directories, 39 files
