@@ -1,10 +1,4 @@
-import {
-  FaBriefcase,
-  FaGraduationCap,
-  FaMapMarkerAlt,
-  FaCode,
-  FaBookOpen,
-} from "react-icons/fa";
+import { FaBriefcase, FaGraduationCap } from "react-icons/fa";
 
 export default function AboutMe() {
   return (

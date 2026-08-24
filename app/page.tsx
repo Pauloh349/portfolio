@@ -46,13 +46,16 @@ export default function Home() {
         }}
       />
       <NavBar />
-      <HeroSection />
-      <AboutMe />
-      <ProjectsSection />
-      <SkillsSection />
-      <CertificatesSection />
-      <CryptoSection />
-      <BusinessSection />
+      <main id="main-content" role="main">
+        <HeroSection />
+        <AboutMe />
+        <ProjectsSection />
+        <SkillsSection />
+        <CertificatesSection />
+        <CryptoSection />
+        <BusinessSection />
+      </main>
+
       <Footer />
     </div>
   );

@@ -19,9 +19,9 @@ export default function HeroSection() {
           <h1>Paul Muiruri</h1>
 
           <p>
-            Paul Muiruri, aka Pauloh, is a Full-Stack Developer &
-            Cloud Solutions Architect from Kenya, building scalable web and
-            mobile applications and cloud infrastructure.
+            Paul Muiruri, aka Pauloh, is a Full-Stack Developer & Cloud
+            Solutions Architect from Kenya, building scalable web and mobile
+            applications and cloud infrastructure.
           </p>
 
           <div className="social-links">
@@ -74,7 +74,7 @@ export default function HeroSection() {
             </a>
 
             <div className="contact-card contact-card--location">
-              <FaLocationPin/>
+              <FaLocationPin />
               <span>Nakuru, Kenya</span>
             </div>
           </div>
@@ -98,7 +98,7 @@ export default function HeroSection() {
               alt="Paul Njuguna Muiruri (Paul Muiruri / Pauloh), Full-Stack Developer"
               width={600}
               height={600}
-              priority
+              priority={true}
             />
           </div>
         </div>
