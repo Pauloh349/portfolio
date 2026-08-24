@@ -878,9 +878,10 @@ h2::after {
 }
 
 .project-img {
-  height: 220px;
   overflow: hidden;
   position: relative;
+  width: 100%;
+  aspect-ratio: 1/1;
 }
 
 .project-img img {

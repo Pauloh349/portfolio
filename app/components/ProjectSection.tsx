@@ -58,8 +58,7 @@ function ProjectCard({
         <Image
           src={project.image}
           alt={`${project.name} project preview`}
-          width={400}
-          height={400}
+          fill
           sizes="(max-width: 768px) 94vw, 400px"
         />
       </div>
