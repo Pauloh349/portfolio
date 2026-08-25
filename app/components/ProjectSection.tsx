@@ -8,7 +8,7 @@ const projects = [
     image: "/studyhub.webp",
     name: "Studyhub Ke (Personal)",
     description:
-      "A comprehensive study platform for organizing learning resources and giving learners access to past examination papers across Kenya.",
+      "A comprehensive study platform for organizing learning resources and giving learners access to past examination papers and notes for Egerton Computer scientists.",
 
     href: "https://play.google.com/store/apps/details?id=com.eapp.elis",
   },
@@ -16,14 +16,15 @@ const projects = [
     image: "/tvethub.webp",
     name: "Tvethub (Contract)",
     description:
-      "An application that provides TVET students with study content, from Tutorials, design templates, past papers.",
+      "An application that provides TVET students with study content; from Tutorials to design templates and past papers in Kenya.",
 
     href: "https://play.google.com/store/apps/details?id=com.tvethub",
   },
   {
     image: "/Reclaima.webp",
     name: "Reclaima (Final Year Project)",
-    description: "Reconnecting you with your lost items.",
+    description:
+      "Reconnecting you with your lost items, making it easier to recover them.",
     href: "http://reclaima-final-year-project.vercel.app/",
   },
 ];

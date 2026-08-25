@@ -881,7 +881,7 @@ h2::after {
   overflow: hidden;
   position: relative;
   width: 100%;
-  aspect-ratio: 1/0.5;
+  aspect-ratio: 1/0.7;
 }
 
 .project-img img {
