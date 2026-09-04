@@ -66,7 +66,7 @@ export default function AboutMe() {
               </div>
 
               <div className="journey-content">
-                <span>2022 — Present</span>
+                <span>2022 - Present</span>
                 <h3>Full-Stack Development</h3>
                 <p>Building web, mobile, and cloud-based applications.</p>
               </div>
@@ -78,7 +78,7 @@ export default function AboutMe() {
               </div>
 
               <div className="journey-content">
-                <span>23/08/2022 — April 2026</span>
+                <span>23/08/2022 - April 2026</span>
                 <h3>Egerton University, Njoro</h3>
                 <p>BSc Applied Computer Science</p>
               </div>
