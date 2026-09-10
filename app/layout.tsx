@@ -51,6 +51,15 @@ export const metadata: Metadata = {
     lastName: "Muiruri",
     username: "Pauloh",
     url: siteUrl,
+    siteName: "Paul Muiruri",
+    images: [
+      {
+        url: profileImage,
+        width: 1200,
+        height: 630,
+        alt: "Paul Muiruri - Full-Stack Developer & Cloud Architect",
+      },
+    ],
   },
 
   twitter: {
@@ -113,6 +122,15 @@ const personSchema = {
   ],
 };
 
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": `${siteUrl}/#website`,
+  name: "Paul Muiruri",
+  alternateName: ["Pauloh", "Paul Muiruri Portfolio"],
+  url: siteUrl,
+};
+
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
@@ -123,8 +141,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className="h-full antialiased" suppressHydrationWarning>
       <head>
-        
-
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -148,6 +164,13 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(personSchema).replace(/</g, "\\u003c"),
+          }}
+        />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(websiteSchema).replace(/</g, "\\u003c"),
           }}
         />
       </head>
