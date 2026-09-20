@@ -1,1 +1,1 @@
-export const siteUrl = "https://plumace.co.ke";
+export const siteUrl = "https://www.plumace.co.ke";
