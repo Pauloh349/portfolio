@@ -82,7 +82,7 @@ export default function HeroSection() {
 
           <div className="hero-btns">
             <a
-              href="https://drive.google.com/file/d/1oGrDWxvMoBeYmGymuMSekQxNiZeQhhEf/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1F2LgKpdNuQ0T-fTekIw0k6JvKHaMWHUy/view?usp=sharing"
               className="btn btn-outline"
               target="_blank"
               rel="noopener noreferrer"

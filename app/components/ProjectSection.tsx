@@ -6,7 +6,7 @@ import { useEffect, useRef, useState } from "react";
 const projects = [
   {
     image: "/studyhub.webp",
-    name: "Studyhub Ke (Personal)",
+    name: "Studyhub Ke",
     description:
       "A comprehensive study platform for organizing learning resources and giving learners access to past examination papers and notes for Egerton Computer scientists.",
 
@@ -14,7 +14,7 @@ const projects = [
   },
   {
     image: "/tvethub.webp",
-    name: "Tvethub (Contract)",
+    name: "Tvethub",
     description:
       "An application that provides TVET students with study content; from Tutorials to design templates and past papers in Kenya.",
 
@@ -22,10 +22,17 @@ const projects = [
   },
   {
     image: "/Reclaima.webp",
-    name: "Reclaima (Final Year Project)",
+    name: "Reclaima",
     description:
       "Reconnecting you with your lost items, making it easier to recover them.",
     href: "http://reclaima-final-year-project.vercel.app/",
+  },
+  {
+    image: "/marvelmovers.webp",
+    name: "Marvel Movers",
+    description:
+      "Helping display information about Marvel movers company that facilitates moving and relocation services in Kenya.",
+    href: "https://marvelmovers.vercel.app/",
   },
 ];
 
@@ -75,7 +82,7 @@ function ProjectCard({
               target="_blank"
               rel="noopener noreferrer"
             >
-              Try it<span className="sr-only">: {project.name}</span>
+              Visit {project.name}
             </a>
           ) : (
             <span className="btn btn-disabled" aria-disabled="true">
