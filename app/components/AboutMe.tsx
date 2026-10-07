@@ -42,7 +42,7 @@ export default function AboutMe() {
               </div>
 
               <div className="journey-content">
-                <span>June 2026 - Present</span>
+                <span>June 16, 2026 - October 7,2026</span>
                 <h3>Trancova Systems Ltd, Ghana</h3>
                 <p>Internship</p>
               </div>
