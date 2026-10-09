@@ -20,9 +20,10 @@ export default function HeroSection() {
           <h1>Paul Muiruri</h1>
 
           <p>
-            Paul Muiruri, aka Pauloh, is a Full-Stack Developer & Cloud
-            Solutions Architect from Kenya, building scalable web and mobile
-            applications and cloud infrastructure.
+            Results-driven Full-Stack Developer based in Nakuru, Kenya, with
+            expertise in building scalable web and mobile applications. Proven
+            track record of handling end-to-end development, from initial coding
+            to deployment on cloud infrastructure.
           </p>
 
           <div className="social-links">

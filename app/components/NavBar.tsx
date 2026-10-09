@@ -7,7 +7,7 @@ const links = [
   ["about", "About"],
   ["projects", "Projects"],
   ["skills", "Skills"],
-  ["certification", "Certification"],
+  // ["certification", "Certification"],
   ["crypto", "Crypto"],
   ["business", "Business"],
   ["footer", "Contact"],

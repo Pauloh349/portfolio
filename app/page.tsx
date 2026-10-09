@@ -51,7 +51,7 @@ export default function Home() {
         <AboutMe />
         <ProjectsSection />
         <SkillsSection />
-        <CertificatesSection />
+        {/* <CertificatesSection /> */}
         <CryptoSection />
         <BusinessSection />
       </main>
