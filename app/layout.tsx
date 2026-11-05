@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { FaWhatsapp } from "react-icons/fa6";
 import "./globals.css";
 import { siteUrl } from "./site";
 
@@ -175,7 +176,19 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         />
       </head>
 
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {children}
+
+        <a
+          href="https://wa.me/+254794300699"
+          className="floating-whatsapp"
+          aria-label="Chat on WhatsApp"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaWhatsapp aria-hidden="true" />
+        </a>
+      </body>
     </html>
   );
 }

@@ -55,6 +55,38 @@ body.modal-open {
   overflow: hidden;
 }
 
+.floating-whatsapp {
+  position: fixed;
+  right: 1.25rem;
+  bottom: max(1.25rem, env(safe-area-inset-bottom));
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+  color: white;
+  box-shadow: 0 12px 24px rgba(18, 140, 126, 0.4);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.floating-whatsapp:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 18px 32px rgba(18, 140, 126, 0.5);
+}
+
+.floating-whatsapp:focus-visible {
+  outline: 3px solid rgba(56, 189, 248, 0.8);
+  outline-offset: 4px;
+}
+
+.floating-whatsapp svg {
+  width: 1.7rem;
+  height: 1.7rem;
+}
+
 /* subtle glow (kept from original) */
 body::before {
   content: "";
