@@ -52,8 +52,8 @@ export default function Home() {
         <ProjectsSection />
         <SkillsSection />
         {/* <CertificatesSection /> */}
-        <CryptoSection />
-        <BusinessSection />
+        {/* <CryptoSection /> */}
+        {/* <BusinessSection /> */}
       </main>
 
       <Footer />

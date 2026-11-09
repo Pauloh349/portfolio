@@ -8,9 +8,9 @@ const links = [
   ["projects", "Projects"],
   ["skills", "Skills"],
   // ["certification", "Certification"],
-  ["crypto", "Crypto"],
-  ["business", "Business"],
-  ["footer", "Contact"],
+  // ["crypto", "Crypto"],
+  // ["business", "Business"],
+  // ["footer", "Contact"],
 ] as const;
 
 export default function NavBar() {
