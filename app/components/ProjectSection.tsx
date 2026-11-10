@@ -20,13 +20,13 @@ const projects = [
 
     href: "https://play.google.com/store/apps/details?id=com.tvethub",
   },
-  {
-    image: "/Reclaima.webp",
-    name: "Reclaima",
-    description:
-      "Reconnecting you with your lost items, making it easier to recover them.",
-    href: "http://reclaima-final-year-project.vercel.app/",
-  },
+  // {
+  //   image: "/Reclaima.webp",
+  //   name: "Reclaima",
+  //   description:
+  //     "Reconnecting you with your lost items, making it easier to recover them.",
+  //   href: "http://reclaima-final-year-project.vercel.app/",
+  // },
   {
     image: "/marvelmovers.webp",
     name: "Marvel Movers",
