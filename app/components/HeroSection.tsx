@@ -5,6 +5,7 @@ import {
   FaGithub,
   FaGooglePlay,
   FaInstagram,
+  FaLinkedin,
   FaLocationPin,
   FaPhone,
   FaWhatsapp,
@@ -62,6 +63,15 @@ export default function HeroSection() {
             >
               <FaGooglePlay role="img" aria-label="Google Play Store" />
             </a>
+
+            <a
+              href="https://www.linkedin.com/in/paul-muiruri-963a7844a/"
+              aria-label="Paul Muiruri on LinkedIn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin role="img" aria-label="LinkedIn" />
+            </a>
           </div>
 
           <div className="hero-contact-cards">
@@ -83,7 +93,7 @@ export default function HeroSection() {
 
           <div className="hero-btns">
             <a
-              href="https://drive.google.com/file/d/1F2LgKpdNuQ0T-fTekIw0k6JvKHaMWHUy/view?usp=sharing"
+              href="https://drive.google.com/file/d/1GZ2dqbqXwEzG-illR1b2TYDHMBGGWUxV/view?usp=sharing"
               className="btn btn-outline"
               target="_blank"
               rel="noopener noreferrer"
