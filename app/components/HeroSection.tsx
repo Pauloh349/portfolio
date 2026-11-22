@@ -65,7 +65,7 @@ export default function HeroSection() {
             </a>
 
             <a
-              href="https://www.linkedin.com/in/paul-muiruri-963a7844a/"
+              href="https://www.linkedin.com/in/paul-muiruri/"
               aria-label="Paul Muiruri on LinkedIn"
               target="_blank"
               rel="noopener noreferrer"
